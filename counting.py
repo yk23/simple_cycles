@@ -116,7 +116,7 @@ def CIS_oracles(U: Set, G: nx.Graph, max_size: int):
 def articulation_points(G: nx.Graph):
     """
     Enumerate all "articulation points" (e.g. vertices whose removal splits up the graph into separate c.c's) of G.
-    An implementation of Section 7.5 from https://doc.lagout.org/Alfred%20V.%20Aho%20-%20Data%20Structures%20and%20Algorithms.pdf.
+    An implementation of Section 7.5 from Aho/Hopcroft/Ullman's textbook "Data Structures and Algorithms".
     """
     if len(G.nodes()) <= 2:
         return
